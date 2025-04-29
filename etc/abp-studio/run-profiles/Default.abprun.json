@@ -1,0 +1,15 @@
+﻿{
+  "applications": {
+    "AbpCustomTenantLogo.Web": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44322",
+      "path": "../../../src/AbpCustomTenantLogo.Web/AbpCustomTenantLogo.Web.csproj",
+      "kubernetesService": ".*-web$",
+      "healthCheckEndpoint": "/health-status",
+      "healthUiEndpoint": "/health-ui",
+      "execution": {
+        "order": 2
+      }
+    }
+  }
+}

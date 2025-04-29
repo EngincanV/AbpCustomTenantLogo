@@ -1,0 +1,105 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.1.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "AbpCustomTenantLogo.Application": {
+      "path": "src/AbpCustomTenantLogo.Application/AbpCustomTenantLogo.Application.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.Application.Tests": {
+      "path": "test/AbpCustomTenantLogo.Application.Tests/AbpCustomTenantLogo.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpCustomTenantLogo.MongoDB": {
+      "path": "src/AbpCustomTenantLogo.MongoDB/AbpCustomTenantLogo.MongoDB.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.MongoDB.Tests": {
+      "path": "test/AbpCustomTenantLogo.MongoDB.Tests/AbpCustomTenantLogo.MongoDB.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpCustomTenantLogo.Domain.Shared": {
+      "path": "src/AbpCustomTenantLogo.Domain.Shared/AbpCustomTenantLogo.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.Application.Contracts": {
+      "path": "src/AbpCustomTenantLogo.Application.Contracts/AbpCustomTenantLogo.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.HttpApi": {
+      "path": "src/AbpCustomTenantLogo.HttpApi/AbpCustomTenantLogo.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.HttpApi.Client": {
+      "path": "src/AbpCustomTenantLogo.HttpApi.Client/AbpCustomTenantLogo.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.Web": {
+      "path": "src/AbpCustomTenantLogo.Web/AbpCustomTenantLogo.Web.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.Web.Tests": {
+      "path": "test/AbpCustomTenantLogo.Web.Tests/AbpCustomTenantLogo.Web.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpCustomTenantLogo.TestBase": {
+      "path": "test/AbpCustomTenantLogo.TestBase/AbpCustomTenantLogo.TestBase.abppkg",
+      "folder": "test"
+    },
+    "AbpCustomTenantLogo.Domain.Tests": {
+      "path": "test/AbpCustomTenantLogo.Domain.Tests/AbpCustomTenantLogo.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpCustomTenantLogo.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/AbpCustomTenantLogo.HttpApi.Client.ConsoleTestApp/AbpCustomTenantLogo.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "AbpCustomTenantLogo.DbMigrator": {
+      "path": "src/AbpCustomTenantLogo.DbMigrator/AbpCustomTenantLogo.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AbpCustomTenantLogo.Domain": {
+      "path": "src/AbpCustomTenantLogo.Domain/AbpCustomTenantLogo.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
