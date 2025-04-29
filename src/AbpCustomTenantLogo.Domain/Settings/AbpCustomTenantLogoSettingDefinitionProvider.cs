@@ -1,4 +1,6 @@
-﻿using Volo.Abp.Settings;
+﻿using AbpCustomTenantLogo.Localization;
+using Volo.Abp.Localization;
+using Volo.Abp.Settings;
 
 namespace AbpCustomTenantLogo.Settings;
 
@@ -6,7 +8,16 @@ public class AbpCustomTenantLogoSettingDefinitionProvider : SettingDefinitionPro
 {
     public override void Define(ISettingDefinitionContext context)
     {
-        //Define your own settings here. Example:
-        //context.Add(new SettingDefinition(AbpCustomTenantLogoSettings.MySetting1));
+        context.Add(new SettingDefinition(
+            name: "CustomTenantLogo",
+            defaultValue: "",
+            displayName: L("Custom Tenant Logo"),
+            isVisibleToClients: true
+        ));
+    }
+
+    private static LocalizableString L(string name)
+    {
+        return LocalizableString.Create<AbpCustomTenantLogoResource>(name);
     }
 }
