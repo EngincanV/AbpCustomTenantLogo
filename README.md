@@ -6,4 +6,4 @@ In this repository, I show you how to implement a custom tenant logo feature in 
 
 ## Demo
 
-![](demo.mp4)
+https://youtu.be/BHvcy-M-3gA
