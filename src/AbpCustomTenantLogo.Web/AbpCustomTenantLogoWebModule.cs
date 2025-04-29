@@ -49,6 +49,7 @@ using Volo.Abp.Swashbuckle;
 using Volo.Abp.OpenIddict;
 using Volo.Abp.Security.Claims;
 using Volo.Abp.SettingManagement.Web;
+using Volo.Abp.SettingManagement.Web.Pages.SettingManagement;
 using Volo.Abp.Studio.Client.AspNetCore;
 
 namespace AbpCustomTenantLogo.Web;
@@ -148,6 +149,12 @@ public class AbpCustomTenantLogoWebModule : AbpModule
         Configure<PermissionManagementOptions>(options =>
         {
             options.IsDynamicPermissionStoreEnabled = true;
+        });
+        
+        //add the setting page contributor   
+        Configure<SettingManagementPageOptions>(options =>
+        {
+            options.Contributors.Add(new CustomTenantLogoSettingPageContributor());
         });
     }
 
