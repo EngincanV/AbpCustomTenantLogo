@@ -1,0 +1,30 @@
+﻿@using AbpCustomTenantLogo.Web.Components
+@model CustomTenantLogoViewModel
+
+<form id="CustomTenantLogoForm">
+    <div class="input-group mb-3">
+        <span class="input-group-text">Tenant Logo URL:</span>
+        <input type="text" class="form-control" id="CustomTenantLogoUrl" required/>
+    </div>
+    
+    <p class="form-text text-muted mb-3">Use relative path or full external URL...</p>
+
+    <button class="btn btn-primary" type="button" id="CustomTenantLogoSaveButton">Save</button>
+</form>
+
+<script>
+        $('#CustomTenantLogoSaveButton').click(function (e) {
+            e.preventDefault();
+            $("#CustomTenantLogoForm").submit();
+        });
+
+        $('#CustomTenantLogoForm').submit(function (e) {
+            e.preventDefault();
+            var customTenantLogoUrl = $('#CustomTenantLogoUrl').val();
+
+            abpCustomTenantLogo.customTenantLogo.updateTenantLogoUrl(abp.currentTenant.id, customTenantLogoUrl)
+                .then(function () {
+                    alert("Tenant logo updated successfully.");
+                });
+        });
+</script>
