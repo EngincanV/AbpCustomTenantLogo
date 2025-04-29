@@ -4,6 +4,6 @@ In multi-tenant applications built with ABP Framework, customizing the tenant's 
 
 In this repository, I show you how to implement a custom tenant logo feature in an ABP application. It's a simple yet effective approach that you can later extend and customize according to your specific needs.
 
-## Demo
+### Read the article: https://engincanveske.substack.com/p/implementing-custom-tenant-logo-feature
 
-https://youtu.be/BHvcy-M-3gA
+### Watch the code in action: https://youtu.be/BHvcy-M-3gA
